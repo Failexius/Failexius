@@ -21,6 +21,7 @@ jobs:
       - uses: egorthinks/git-bonsai@bec04c39f62731fdb28c3b82322ef21cbf3bdfac
         with:
           commit: "false"
+          github-token: ${{ secrets.PROFILE_PAT }}
       - name: Commit the bonsai if it changed
         shell: bash
         run: |
