@@ -1,0 +1,34 @@
+name: koi
+
+on:
+  schedule:
+    - cron: "5 0 * * *"      # kurz nach Mitternacht UTC
+  workflow_dispatch:          # manuell startbar
+  push:
+    paths:
+      - .github/workflows/koi.yml
+
+permissions:
+  contents: write
+
+concurrency: koi
+
+jobs:
+  koi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: yalongwastaken/git-koi@v1
+        with:
+          body: white          # white, black, asagi, tea, gold, platinum
+          output-dir: koi
+
+      - name: Commit koi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add koi/koi.gif
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update koi"
+          git push
