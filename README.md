@@ -1,19 +1,10 @@
-<picture>
-  <img align="left" width="45%" src="assets/riser.svg" alt="">
-</picture>
-<a href="https://github.com/yalongwastaken/git-koi">
-  <img src="koi/koi.gif" align="right" width="45%" alt="My koi, redrawn every night from the day's activity">
-</a>
-<picture>
-  <img align="right" width="5%" src="assets/divider.svg" alt="">
-</picture>
-<picture>
-  <img align="left" width="8%" src="assets/spacer.svg" alt="">
-</picture>
-<a href="https://egorthinks.github.io/git-bonsai/?u=Failexius">
-  <img src="output/bonsai.gif" align="left" width="37%" alt="My GitHub bonsai, open the interactive playground">
-</a>
-<br clear="all">
+<p align="center">
+  <a href="https://egorthinks.github.io/git-bonsai/?u=Failexius">
+    <img src="output/bonsai.gif" width="40%" alt="My GitHub bonsai, open the interactive playground"></a>
+  <picture><img width="5%" src="assets/divider.svg" alt=""></picture>
+  <a href="https://github.com/yalongwastaken/git-koi">
+    <img src="koi/koi.gif" width="45%" alt="My koi, redrawn every night from the day's activity"></a>
+</p>
 <a href="https://github.com/Failexius">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="cards/stats-dark.svg">
